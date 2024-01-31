@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import { CgSpinner } from "react-icons/cg";
 import "./Button.css";
 
-type Props = {
+export type PropsButton = {
   children: string;
-  type?: "primary" | "default" | "text" | "link";
-  size?: "lg" | "md" | "sm";
+  type?: "default" | "primary" | "text" | "link";
+  size?: "sm" | "md" | "lg";
   disabled?: boolean;
-  icon?: any;
+  icon?: JSX.Element;
   loading?: boolean;
   onClick?: () => void;
 };
@@ -22,7 +22,7 @@ const Button = ({
   disabled,
   loading,
   onClick,
-}: Props) => {
+}: PropsButton) => {
   const defineTypeButton = () => {
     switch (type) {
       case "primary":

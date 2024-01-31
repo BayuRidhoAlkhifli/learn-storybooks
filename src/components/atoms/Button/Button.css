@@ -11,17 +11,17 @@
 }
 
 .btn {
-  @apply border text-white border-stone-600 hover:border-amber-400 hover:text-amber-400 disabled:text-gray-600 disabled:bg-gray-900 disabled:border-gray-800 disabled:cursor-not-allowed disabled:pointer-events-none;
+  @apply border text-white border-white/60 bg-transparent hover:bg-white/10 disabled:text-gray-600 disabled:bg-gray-900 disabled:border-gray-800 disabled:cursor-not-allowed disabled:pointer-events-none;
 }
 
 .btn-primary {
-  @apply border border-amber-500 bg-amber-400 text-stone-950 hover:opacity-60 disabled:text-gray-600 disabled:bg-gray-900 disabled:border-gray-600 disabled:border-gray-800 disabled:cursor-not-allowed disabled:pointer-events-none;
+  @apply border-none bg-amber-400 text-stone-950 hover:bg-amber-400/80 disabled:text-gray-600 disabled:bg-gray-900 disabled:border-gray-800 disabled:cursor-not-allowed disabled:pointer-events-none;
 }
 
 .btn-text {
-  @apply bg-transparent text-white hover:bg-gray-900 disabled:text-gray-600 disabled:cursor-not-allowed disabled:pointer-events-none;
+  @apply border-none text-white bg-transparent hover:bg-white/10 disabled:text-gray-600 disabled:cursor-not-allowed disabled:pointer-events-none;
 }
 
 .btn-link {
-  @apply text-amber-400 hover:text-opacity-60 disabled:text-gray-600 disabled:cursor-not-allowed disabled:pointer-events-none;
+  @apply border-none bg-transparent text-amber-400 hover:text-opacity-60 disabled:text-gray-600 disabled:cursor-not-allowed disabled:pointer-events-none;
 }
